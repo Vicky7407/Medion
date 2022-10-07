@@ -1,24 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Component/Header';
+import Footer from './Component/Footer';
+import Home from './Container/Home';
+import About from './Container/About';
+import Medicine from './Container/Medicine';
+import Onlinebuy from './Container/Onlinebuy';
+import Contectus from './Container/Contectus';
+import Layout from './Layout';
+import Routes from './routes';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes />
+      {/* <BrowserRouter> */}
+        {/* <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path='home' element={<Home />} /> */}
+            {/* <Route index element={<Home />} />
+            <Route path="teams" element={<Teams />}>
+              <Route path=":teamId" element={<Team />} />
+              <Route path="new" element={<NewTeamForm />} />
+              <Route index element={<LeagueStandings />} />
+            </Route> */}
+          {/* </Route>
+        </Routes> */}
+      {/* </BrowserRouter> */}
+      {/* <Header/> */}
+      {/* <Home /> */}
+      {/* <About />
+      <Medicine />
+      <Onlinebuy/>
+      <Contectus /> */}
+      {/* <Footer/> */}
+    </>
   );
 }
 
