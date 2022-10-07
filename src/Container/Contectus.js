@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+
+
 
 function Contectus(props) {
+    const [data, setData] = useState({})
+    const [fname, setFname] = useState('')
     return (
         <div>
             {/* contact section */}
@@ -20,8 +25,8 @@ function Contectus(props) {
                             <div className="form_contaier">
                                 <form>
                                     <div className="form-group">
-                                        <label htmlFor="exampleInputName1">Name</label>
-                                        <input type="text" className="form-control" id="exampleInputName1" />
+                                        <label htmlFor="NAME">Name</label>
+                                        <input type="text" className="form-control" id="setFname" />
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="exampleInputNumber1">Phone Number</label>
@@ -37,13 +42,16 @@ function Contectus(props) {
                                             <option selected>Medicine 1</option>
                                             <option selected>Medicine 2</option>
                                             <option selected>Medicine 3</option>
+                                            <option selected>Medicine 4</option>
+                                            <option selected>Medicine 5</option>
+                                            <option selected>Medicine 6</option>
                                         </select>
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="exampleInputMessage">Message</label>
                                         <input type="text" className="form-control" id="exampleInputMessage" />
                                     </div>
-                                    <button type="submit" className>Send</button>
+                                    <button type="submit">Send</button>
                                 </form>
                             </div>
                         </div>
@@ -60,10 +68,12 @@ function Contectus(props) {
                         </div>
                     </div>
                 </div>
+                
             </section>
-            {/* end contact section */}
-            {/* info section */}
+
         </div>
     );
 }
+
+
 export default Contectus;

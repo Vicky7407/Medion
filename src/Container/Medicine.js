@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from 'nuka-carousel';
 
 function Medicine(props) {
     return (
@@ -29,7 +30,8 @@ function Medicine(props) {
                             </div>
                             <div className="col-lg-7 col-md-5">
                                 <div className="img-box">
-                                    <img src="Assets/images/medicines.jpg" alt="" className='b-red'/>
+                                    <img src="Assets/images/medicines.jpg" alt="medicine" className='b-red' />
+
                                 </div>
                             </div>
                         </div>
@@ -42,139 +44,13 @@ function Medicine(props) {
                     <h2 className="text-uppercase">
                         Vitamins &amp; Supplements
                     </h2>
-                    <div className="carousel-wrap layout_padding2">
-                        <div className="owl-carousel owl-2">
-                            <div className="item">
-                                <div className="box">
-                                    <div className="btn_container">
-                                        <a href>
-                                            Buy Now
-                                        </a>
-                                    </div>
-                                    <div className="img-box">
-                                        <p>hhhhhh</p>
-                                        <img src="Assets/images/client.png" alt="" className='b-red' />
-                                    </div>
-                                    <div className="detail-box">
-                                        <div className="star_container">
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star-o" aria-hidden="true" />
-                                        </div>
-                                        <div className="text">
-                                            <h6>
-                                                Medicine
-                                            </h6>
-                                            <h6 className="price">
-                                                <span>
-                                                    $
-                                                </span>
-                                                30
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="box">
-                                    <div className="btn_container">
-                                        <a href>
-                                            Buy Now
-                                        </a>
-                                    </div>
-                                    <div className="img-box">
-                                        <img src="Assets/images/p-6.jpg" alt="" />
-                                    </div>
-                                    <div className="detail-box">
-                                        <div className="star_container">
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star-o" aria-hidden="true" />
-                                        </div>
-                                        <div className="text">
-                                            <h6>
-                                                Medicine
-                                            </h6>
-                                            <h6 className="price">
-                                                <span>
-                                                    $
-                                                </span>
-                                                30
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="box">
-                                    <div className="btn_container">
-                                        <a href>
-                                            Buy Now
-                                        </a>
-                                    </div>
-                                    <div className="img-box">
-                                        <img src="Assets/images/p-6.jpg" alt =""/>
-                                    </div>
-                                    <div className="detail-box">
-                                        <div className="star_container">
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star-o" aria-hidden="true" />
-                                        </div>
-                                        <div className="text">
-                                            <h6>
-                                                Medicine
-                                            </h6>
-                                            <h6 className="price">
-                                                <span>
-                                                    $
-                                                </span>
-                                                30
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="box">
-                                    <div className="btn_container">
-                                        <a href>
-                                            Buy Now
-                                        </a>
-                                    </div>
-                                    <div className="img-box">
-                                        <img src="Assets/images/p-6.jpg" alt="" />
-                                    </div>
-                                    <div className="detail-box">
-                                        <div className="star_container">
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star" aria-hidden="true" />
-                                            <i className="fa fa-star-o" aria-hidden="true" />
-                                        </div>
-                                        <div className="text">
-                                            <h6>
-                                                Medicine
-                                            </h6>
-                                            <h6 className="price">
-                                                <span>
-                                                    $
-                                                </span>
-                                                30
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Carousel wrapAround={true} slidesToShow={3}>
+                            <img src="Assets/images/p-1.jpg" />
+                            <img src="Assets/images/p-2.jpg" />
+                            <img src="Assets/images/p-3.jpg" />
+                            <img src="Assets/images/p-4.jpg" />
+                            <img src="Assets/images/p-5.jpg" />
+                </Carousel>
                 </div>
                 <div className="d-flex justify-content-center">
                     <a href>

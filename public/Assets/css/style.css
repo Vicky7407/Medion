@@ -55,10 +55,9 @@ body {
 }
 
 /*header section*/
-.hero_area {
-  height: 100vh;
-  background-image: url(../images/hero-bg.jpg);
-}
+/* .hero_area {
+  
+} */
 
 .sub_page .hero_area {
   height: auto;
@@ -873,4 +872,64 @@ a:focus {
 }
 .health_section .box .btn_container a{
   color:#000000;
+}
+.navbar-nav li a{
+  margin: 10px;
+}
+.login_btn-contanier span{
+  color:white;
+}
+.health_section a {
+  color: black!important;
+  
+}
+.detail-box h6{
+  font-size: 14px;
+  margin-top: 7px;
+}
+.slider_section .detail-box h1 span {
+  color: black;
+  font-size: 3rem;
+}
+.login_btn-contanier-cart img{
+  width: 25px;
+  color: white;
+  height: 25px;
+  margin-right: 5PX;
+  vertical-align: middle;
+}
+.login_btn-contanier-cart a{
+  text-transform: uppercase;
+  color: rgb(244, 65, 16);
+}
+.btn-primary{
+  text-align: center;
+}
+.slider-list{
+  text-align:  center !important;
+}
+.mt-2 {
+  width: 40% !important;
+  align-items: center;
+}
+.form-group{
+  margin-left: 40%;
+}
+.btn {
+  width: 15% !important;
+  margin-left: 45%!important;
+  margin-bottom: 5%;
+}
+.btn-info{
+  width: 37%!important;
+}
+.btn a{
+  color: white;
+  padding: 10px 10px;
+  background-color: #0d6efd;
+  text-decoration: none;
+}
+.btn :hover{
+  background-color: #5692ec;
+  color: white !important;
 }

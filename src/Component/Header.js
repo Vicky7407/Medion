@@ -60,20 +60,33 @@ function Header(props) {
                                     <li className="nav-item">
                                     <Link to='/Contectus'>Contectus</Link>
                                     </li>
+                                    <li className="nav-item">
+                                    <Link to='/Signup'>SignUp</Link>
+                                    </li>
                                 </ul>
                                 <form className="form-inline ">
                                     <input type="search" placeholder="Search" />
                                     <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit" />
                                 </form>
-                                <div className="login_btn-contanier ml-0 ml-lg-5">
+                                <div className="login_btn-contanier ml-0 ml-lg-5 ">
                                     <a href>
                                         <img src="Assets/images/user.png" alt />
                                         <span>
-                                            Login
+                                        <Link to='login'>Login</Link>
                                         </span>
                                     </a>
                                 </div>
+                                <div className="login_btn-contanier-cart ml-0 ml-lg-5 ">
+                                    <a href>
+                                    <img src="../Assets/images/cart.png" alt />
+                                        <span>
+                                        <Link to='Cart'>Cart</Link>
+                                        </span>
+                                    </a>
+                                    
+                                </div>
                             </div>
+                            
                         </div>
                     </nav>
                 </div>
