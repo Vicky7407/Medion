@@ -10,9 +10,9 @@ const LoginSchema = Yup.object().shape({
   password: Yup.string()
     .min(3, "Password must be 3 characters at minimum")
     .required("Password is required"),
-   phone: Yup
+  phone: Yup
     .string()
-  
+
     .matches(/[0-9]{10,10}/, {
       message: "Invalid Indian number",
       excludeEmptyString: false,
@@ -20,6 +20,9 @@ const LoginSchema = Yup.object().shape({
     .max(10)
     .required(),
 });
+const handleSignup = () => {
+  localStorage.setItem('vinay', '12121')
+}
 
 class App extends React.Component {
   render() {
@@ -107,6 +110,7 @@ class App extends React.Component {
                       <button
                         type="submit"
                         className="btn btn-primary btn-block mt-4"
+                        onClick={handleSignup}
                       >
                         Submit
                       </button>

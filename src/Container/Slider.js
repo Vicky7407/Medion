@@ -9,7 +9,7 @@ export default class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
-      
+
     };
     return (
       <div>
@@ -32,7 +32,7 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
             <h3>
-          
+
             </h3>
           </div>
         </Slider>

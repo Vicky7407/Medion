@@ -11,7 +11,6 @@ import News from './Container/News';
 import Onlinebuy from './Container/Onlinebuy';
 import SignUp from './Container/Signup';
 import Layout from './Layout';
-
 const Routes = () => {
   return useRoutes([
     {
@@ -24,7 +23,7 @@ const Routes = () => {
         },
         { path: "/home", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "/medicine", element: <Medicine /> },
+        {path:  "/Medicine", element: <Medicine />},
         { path: "/onlinebuy", element: <Onlinebuy /> },
         { path: "/News", element: <News /> },
         { path: "/Contectus", element: <Contectus /> },

@@ -11,7 +11,17 @@ password: Yup.string()
 	.min(3, "Password must be 3 characters at minimum")
 	.required("Password is required"),
 });
-
+// inintVal = {
+// 	name: "",
+// 	email: "",
+// 	password: "",
+//   };
+const handleLogin = () => {
+    localStorage.setItem('user', '1211')
+  }
+const handleForgotpass = () =>{
+	localStorage.setItem('value')
+}
 class App extends React.Component {
 render() {
 	return (
@@ -42,6 +52,7 @@ render() {
 						name="email"
 						placeholder="Enter email"
 						autocomplete="off"
+                      value={values.email}
 						className={`mt-2 form-control
 						${touched.email && errors.email ? "is-invalid" : ""}`}
 						/>
@@ -78,10 +89,15 @@ render() {
 					<button
 						type="submit"
 						className="btn btn-primary btn-block mt-4"
+						onClick={handleLogin}
 					>
 						Submit
 					</button>
-					<button>
+					<button
+					type="submit"
+					className="btn btn-primary btn-block mt-4"
+					onClick={handleForgotpass}
+					>
 						<a href="Forgotpassword">Forgot password</a>
 					</button>
 					</Form>
